@@ -113,11 +113,11 @@ var formatGoogleCalendar = (function() {
             if (format[i] === '*summary*') {
                 output = output.concat('<span class="summary" style="font-weight:bold;font-size:22px;color:#002147;">' + summary + '</span>');
             } else if (format[i] === '*date*') {
-                output = output.concat('<span class="date" style="font-size:18px;"><b>WHEN:</b>' + dateFormatted + '</span>');
+                output = output.concat('<span class="date" style="font-size:18px;"><b>WHEN: </b>' + dateFormatted + '</span>');
             } else if (format[i] === '*description*') {
                 output = output.concat('<span class="description">' + description + '</span>');
             } else if (format[i] === '*location*') {
-                output = output.concat('<span class="location" style="font-size:18px;"><b>WHERE:</b>' + location + '</span>');
+                output = output.concat('<span class="location" style="font-size:18px;">' + location + '</span>');
             } else {
                 if ((format[i + 1] === '*location*' && location !== '') ||
                     (format[i + 1] === '*summary*' && summary !== '') ||
