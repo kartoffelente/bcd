@@ -2,7 +2,7 @@
  * Format Google Calendar JSON output into human readable list
  *
  * Copyright 2015, Milan Kacurak
- * 
+ * For use on County Party site
  */
 var formatGoogleCalendar = (function() {
 
@@ -111,7 +111,7 @@ var formatGoogleCalendar = (function() {
             format[i] = format[i].toString();
 
             if (format[i] === '*summary*') {
-                output = output.concat('<span class="summary" style="font-weight:bold;">' + summary + '</span>');
+                output = output.concat('<span class="summary" style="font-weight:bold;font-size:18px;color:#002147;">' + summary + '</span>');
             } else if (format[i] === '*date*') {
                 output = output.concat('<span class="date">' + dateFormatted + '</span>');
             } else if (format[i] === '*description*') {
