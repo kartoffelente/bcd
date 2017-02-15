@@ -111,7 +111,7 @@ var formatGoogleCalendar = (function() {
             format[i] = format[i].toString();
 
             if (format[i] === '*summary*') {
-                output = output.concat('<span class="summary" style="font-weight:bold;font-size:20px;color:#002147;">' + summary + '</span>');
+                output = output.concat('<span class="summary" style="font-weight:bold;font-size:19px;color:#002147;">' + summary + '</span>');
             } else if (format[i] === '*date*') {
                 output = output.concat('<span class="date" style="font-size:18px;">' + dateFormatted + '</span>');
             } else if (format[i] === '*description*') {
