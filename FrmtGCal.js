@@ -135,7 +135,7 @@ var formatGoogleCalendar = (function() {
     var isPast = function(date) {
         var compareDate = new Date(date),
             now = new Date();
-            now.setDate(now.getDate() - 1);
+            now.setDate(now.getDate() - 0.5);
 
 
         if (now.getTime() > compareDate.getTime()) {
