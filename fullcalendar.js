@@ -9288,7 +9288,7 @@ Calendar.defaults = {
 
 	// display
 	defaultView: 'month',
-	aspectRatio: 1.35,
+	aspectRatio: 0.8,
 	header: {
 		left: 'title',
 		center: '',
