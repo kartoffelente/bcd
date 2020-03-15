@@ -719,7 +719,7 @@ a.fc-more:hover {
 /* title text */
 
 .fc-toolbar h2 {
-	font-family:Merriweather;
+	font-family:inherit;
 	font-size:2.75em;
 	margin: 0;
 }
